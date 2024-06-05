@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Ingot Script</title>
+</head>
+<body>
+    <h1>Load Ingot Script</h1>
+    <p>Click the button below to load the Ingot script.</p>
+    <button id="loadScriptButton">Load Script</button>
+
+    <script>
+        document.getElementById('loadScriptButton').addEventListener('click', function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
+</body>
+</html>
